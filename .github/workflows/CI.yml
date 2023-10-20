@@ -16,6 +16,9 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project
       - name: Create a file
-        run: touch /tmp/vijay1
+        run: | 
+          touch /tmp/vijay1
+          cd /tmp
+          ls -l
       - name: list files
         run: ls
