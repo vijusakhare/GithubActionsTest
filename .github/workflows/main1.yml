@@ -1,0 +1,23 @@
+name: CI
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+jobs:
+  job1:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          sleep 30
+          uname -a
+          cat /etc/os-release
+          echo test, and deploy your project
+      - name: Create a file
+        run: touch /tmp/gagandeep1
+      - name: list files
+        run: ls
