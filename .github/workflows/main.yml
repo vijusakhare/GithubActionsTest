@@ -1,0 +1,12 @@
+# This is a common basic workflow
+
+name: wf1
+on: 
+  push:
+    branches: [ "main" ]
+jobs:
+  build: 
+    runs-on: ubunutu-latest
+    steps:
+      - name: this is my first step
+        run: echo "Hello, from Vijaykumar!!"
