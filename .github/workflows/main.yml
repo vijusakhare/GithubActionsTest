@@ -5,8 +5,8 @@ on:
   push:
     branches: [ "main" ]
 jobs:
-  build: 
-    runs-on: ubunutu-latest
+  build:
+    runs-on: ubuntu-latest
     steps:
       - name: this is my first step
-        run: echo "Hello, from Vijaykumar!!"
+        run: echo "Hello, from Vijaykumar"
