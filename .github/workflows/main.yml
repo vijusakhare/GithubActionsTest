@@ -6,7 +6,7 @@ on:
     branches: [ "main" ]
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: vijay_yml_test
     steps:
       - name: this is my first step
         run: echo "Hello, from Vijaykumar"
